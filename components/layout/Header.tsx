@@ -1,11 +1,9 @@
 'use client';
 
-import { useMiniKit } from '@coinbase/minikit';
 import { Leaf, User } from 'lucide-react';
 
 export function Header() {
-  const { context } = useMiniKit();
-  const displayName = context?.user?.displayName || 'EcoTracker';
+  const displayName = 'EcoTracker';
 
   return (
     <header className="bg-surface border-b border-border px-4 py-3">
